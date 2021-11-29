@@ -1,0 +1,230 @@
+.service_header{
+   margin-top: 200px;
+   text-align: center;
+   
+}
+hr{
+   margin-top: 100px;
+   display: none;
+}
+
+.black_bg{
+   display: flex;
+   justify-content: center;
+   background-color: rgb(34, 33, 33);
+   width: 100%;
+   height: 300px;
+   z-index: 10;
+   
+}
+.black_resp{
+   display: none;
+   margin-top: 200px;
+   background-color: rgb(34, 33, 33);
+   width: 100%;
+   
+}
+.black_resp .inside_black{
+   display: flex;
+   justify-content: center;
+}
+
+.black_resp2{
+   display: none;
+   margin-top: 200px;
+   background-color: rgb(34, 33, 33);
+   width: 100%;
+   
+}
+.black_resp2 .inside_black{
+   display: flex;
+   justify-content: center;
+}
+.about_content{
+   z-index: 100;
+   margin-top: -220px;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   overflow: hidden;
+}
+.about_content h4{
+   color: black;
+}
+.trainer{
+   width:350px;
+   height: 350px;
+   object-fit: contain;
+}
+.fservice{
+   text-align: center;
+   margin:0 auto;
+   width:90%;
+}
+.sservice{
+   text-align: center;
+   margin: auto;
+   width:90%;
+   
+}
+.tservice{
+   text-align: center;
+   margin: auto;
+   width:90%;
+}
+@media screen and (max-width:1120px){
+   .black_bg{
+      height: 250px;
+   }
+   .about_content{
+      margin-top: -190px;
+   }
+   .fservice{
+      width: 100%;
+      margin: auto;
+   }
+   .sservice{
+      width: 100%;
+      margin: auto;
+   }
+   .tservice{
+      width: 100%;
+      margin: auto;
+   }
+   .trainer{
+      width: 300px;
+      height: 300px;
+   }
+
+}
+@media screen and (max-width:980px){
+   .black_bg{
+      height: 230px;
+   }
+   .about_content{
+      margin-top: -170px;
+   }
+   .fservice{
+      width: 100%;
+      margin: auto;
+   }
+   .sservice{
+      width: 100%;
+      margin: auto;
+   }
+   .tservice{
+      width: 100%;
+      margin: auto;
+   }
+   .trainer{
+      width: 260px;
+      height: 260px;
+   }
+
+
+}
+@media screen and (max-width:900px){
+   .about_content{
+      margin:0px;
+   }
+   hr{
+      display: block;
+   }
+   .service_header{
+      margin-top: 100px;
+   }
+   .fservice{
+
+      text-align: center;
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0px;
+      width:90%;
+   }
+   .fservice img{
+      margin-top: 90px;
+   }
+   .sservice{
+      text-align: center;
+      margin-top: -285px;
+      margin-bottom: 0px;
+      width:90%;
+      
+   }
+  
+   .black_bg{
+      height: 200px;
+   }
+   .about_content{
+      margin-top: -250px;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:1fr 1fr 1fr;
+   }
+   .trainer{
+      width:200px;
+      height: 200px;
+   }
+   .black_resp{
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      display: block;
+      margin-top: 50px;
+      
+   }
+   
+   .black_resp2{
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      display: block;
+      margin-top: -300px;
+      
+   }
+   .trainer{
+      width:250px ;
+      height: 250px;
+   }
+   .tservice{
+      margin-top: -230px;
+      margin-bottom: 100px;
+   }
+   .about_content h4{
+      margin-top: 0;
+   }
+}
+
+
+@media screen and (max-width:600px){
+   .sservice{
+      margin-top: -410px;
+   }
+   .black_bg{
+      padding:0 0 0 10px;
+   }
+   .black_resp{
+      padding:0 0 0 10px;
+
+
+   }
+}
+@media screen and (max-width:420px){
+  .sservice{
+     margin-top: -450px;
+  }
+}
+@media screen and (max-width:390px){
+   .sservice{
+      margin-top: -280px;
+   }
+   .tservice{
+      margin-bottom: 0px;
+   }
+ 
+}   
+@media screen and (max-width:300px){
+   .sservice{
+      margin-top: -280px;
+   }
+}
