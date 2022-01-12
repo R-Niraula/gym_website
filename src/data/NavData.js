@@ -18,7 +18,7 @@ export const navData = [
     {
         title:"Gallery",
         path:'/gallery'
-    }
+    },
 
 ]
 

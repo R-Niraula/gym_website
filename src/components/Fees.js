@@ -6,7 +6,7 @@ import './fee.css'
 import cardio from '../images/cardio.jpg'
 import weight from '../images/weight.jpg'
 import esewa from '../images/esewa-logo.png'
-
+import { Link } from 'react-router-dom'
 
 const Fees = () => {
     return (
@@ -16,17 +16,21 @@ const Fees = () => {
     </div>
      <div className="GymFee">
        <div className="weight">           
+       <Link to="/payment">
          <div className="price_tag">
            <h2>Rs. 1000</h2> 
            <img className="esewa" src={esewa} alt="e-sewa" />   
          </div>
+        </Link> 
        </div>
        <div className="cardio">
+       <Link to="/payment">
           <div className="price_tag">
-            <h2>Rs. 1500</h2> 
-          <img className="esewa" src={esewa} alt="e-sewa" /> 
-            
+              <h2>Rs. 1500</h2> 
+              <img className="esewa" src={esewa} alt="e-sewa" /> 
           </div> 
+       </Link>
+            
        </div>
      </div>
     </>

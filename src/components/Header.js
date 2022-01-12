@@ -1,6 +1,4 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
-import ImageOne from '../images/bgheader.jpg'
 import './header.css'
 
 

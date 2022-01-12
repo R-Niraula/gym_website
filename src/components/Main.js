@@ -8,6 +8,7 @@ import Footer from './Footer'
 import Gallery from './Gallery'
 import { Route, Routes } from 'react-router-dom';
 import Home from './Home'
+import Payment from './payment/Payment'
 import SimpleReactLightbox from 'simple-react-lightbox'
 import Contact from './Contact'
 
@@ -20,6 +21,7 @@ const Main = () => {
            <Routes>
              <Route exact path="/" element={<Home />} />
              <Route exact path="/gallery" element={<Gallery />} />
+             <Route exact path="/Payment" element={<Payment />} />
              <Route exact path="/contact" element={<Contact />} />
            </Routes>
          </SimpleReactLightbox>

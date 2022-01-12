@@ -18,6 +18,10 @@ const Services = () => {
       </div>
       <div className="black_bg">
       </div>
+      <div className="black_resp1">
+        <div className="inside_black">
+        </div>
+      </div>
        <div className="about_content">
             <div className="fservice">
               <img className="trainer" src={Cardio} />

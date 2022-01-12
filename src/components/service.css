@@ -17,6 +17,17 @@ hr{
    z-index: 10;
    
 }
+.black_resp1{
+   display: none;
+   margin-top: 200px;
+   background-color: rgb(34, 33, 33);
+   width: 100%;
+   
+}
+.black_resp1 .inside_black{
+   display: flex;
+   justify-content: center;
+}
 .black_resp{
    display: none;
    margin-top: 200px;
@@ -153,7 +164,15 @@ hr{
    }
   
    .black_bg{
+      display: none;
+   }
+   .black_resp1{
+      display: flex;
+      justify-content: center;
       height: 200px;
+      display: block;
+      margin-top: 50px;
+      
    }
    .about_content{
       margin-top: -250px;
@@ -187,7 +206,7 @@ hr{
       height: 250px;
    }
    .tservice{
-      margin-top: -230px;
+      margin-top: -260px;
       margin-bottom: 100px;
    }
    .about_content h4{
@@ -198,7 +217,7 @@ hr{
 
 @media screen and (max-width:600px){
    .sservice{
-      margin-top: -410px;
+      margin-top: -280px;
    }
    .black_bg{
       padding:0 0 0 10px;
@@ -211,7 +230,7 @@ hr{
 }
 @media screen and (max-width:420px){
   .sservice{
-     margin-top: -450px;
+     margin-top: -280px;
   }
 }
 @media screen and (max-width:390px){

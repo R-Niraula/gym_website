@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { navData } from '../data/NavData'
 import './Navbar.css' 
 import { FaBars } from 'react-icons/fa'
-import logo from '../images/logo.jpg'
+import logo from '../images/logo.png'
 
 
 const Navbar = () => {

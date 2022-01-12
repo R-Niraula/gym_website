@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import emailjs from 'emailjs-com'
-
 
 
 const ContactUs = styled.div`
@@ -94,21 +93,17 @@ form{
 
 const Contact = () => {
  
-  const [registration, setRegistration] = useState({
-     fullname:"",
-     email:"",
-     phone:"",
-     message:""
-  })
 
-  const handleInput = (e) =>{
-    const name = e.target.name
-    const value = e.target.value
-    console.log(name,value)
-
-    setRegistration({...registration, [name]: value })
-    }
-
+  const formSubmit = (e) =>{
+    // e.preventDefault()
+    emailjs.sendForm('service_3ihuwjr', 'template_c3b81qm',  e.target, 'user_FGoUWay9leigzycwxW1V9')
+    .then(res=>{
+      console.log(res)
+    }).catch(err=>{
+      console.log(err)
+    })
+    alert(`We'll contact you soon`)
+  }
 
     return (
         <ContactUs>
@@ -119,25 +114,17 @@ const Contact = () => {
               <ContactForm>
                 <h2>Matador Gym & Fitness Center</h2>
                 <h3>Contact Us</h3>
-                <form action="">
-                  <input type="text" name="fullname" id="fullname"
-                  value={registration.fullname}
-                  onChange={handleInput}
+                <form onSubmit={formSubmit}>
+                  <input type="text" name="fullname" 
                   placeholder="Full Name" required /><br /><br /><br />
                  
-                  <input type="email" name="email" id="email"
-                  value={registration.email}
-                  onChange={handleInput}
+                  <input type="email" name="email"
                   placeholder="Email Address" required /><br /><br /><br />
                  
-                  <input type="number" name="phone" id="phone"
-                  value={registration.phone}
-                  onChange={handleInput}
+                  <input type="number" name="phone"
                   placeholder="+977-9876543210" required /><br /><br /><br /><br />
                  
-                  <textarea name="message" id="message"
-                  value={registration.message}
-                  onChange={handleInput}
+                  <textarea name="message"
                   placeholder="Write something..." /> <br /><br />
                  
                   <input type="submit" value="Send" className="submit_btn" />
